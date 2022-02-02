@@ -1,0 +1,127 @@
+:root{
+    --bg-color: rgb(248, 221, 226);
+    --typewriterSpeed: 6s;
+    --typewriterChars: 23;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    border-radius: 40%;
+    border-width: 20px;
+    border-color: pink;
+    border-style:groove;
+    padding: 10px;  
+}
+
+body{
+    margin:0;
+    font-family: monaco,Consolas,Lucida Console,monospace;
+    min-height: 10vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: var(--bg-color);
+    z-index: 9999;
+}
+
+.links{
+    text-align: right;
+    padding-top: 0.4in;
+    padding-right: 0.15in;
+}
+
+.a{
+    padding:0.1in;
+    /* font-style: bold; */
+    /* border-radius: 25%; */
+    /* border-style: groove; */
+    /* border-color: pink; */
+    /* border-width: 10px;  */
+    padding-inline-start: 0.15in;
+    padding-inline-end: 0.15in;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-family: "Lucida Console", Courier New, monospace;
+    font-size: large;
+    position: relative;
+}
+
+a:hover {
+    color: rgba(248, 15, 131, 0.404);
+    background: transparent;
+    text-shadow: 0 0 50px #f147f1;
+}
+
+h1{
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Lucida Console", Courier New, monospace;
+    z-index: 9999;
+    /* add this line to center the heading */
+    /* width:max-content; */
+}
+
+h1::before,
+h1::after{
+    content:'';
+    place-content: center;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+h1::before{
+    background: var(--bg-color);
+    animation: 
+        typewriter var(--typewriterSpeed) steps(var(--typewriterChars)) 0.7s forwards;
+}
+
+h1::after{
+    width: 0.045em;
+    background: white;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterChars)) 0.7s forwards,
+    blink 600ms steps(23) infinite;
+}
+@keyframes typewriter {
+    to{
+        left:100%; }
+}
+
+@keyframes  blink {
+    to{
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subtitle {
+    color: hs1(0 0% 0% / 0.7);
+    margin-left: 20%;
+    margin-right: 20%;
+    display:inline;
+    font-size:large;
+    font-style: bold;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 0.5s) forwards ;
+}
+
+#particles-js {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

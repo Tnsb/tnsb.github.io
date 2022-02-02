@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit:900");
+body {
+  font-family: monaco,Consolas,Lucida Console,monospace;
+  display: -ms-grid;
+  display: grid;
+  background-color: #fce9e7;
+  z-index: 9999;
+}
+
+.links {
+    text-align: right;
+    padding-top: 0.25in;
+    padding-right: 0.15in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(192, 192, 192);
+    margin-top: 3.5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-bottom: -3em;
+}
+
+hr1 {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 4px solid rgb(136, 136, 136);
+    margin-top: 0.3em;
+    margin-left: 0em;
+    margin-right: 0em;
+    margin-bottom: 1em;
+}
+
+hr2{
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 4px solid rgb(136, 136, 136);
+    margin-top: 0.3em;
+}
+
+.a{
+    padding:0.1in;
+    padding-inline-start: 0.15in;
+    padding-inline-end: 0.15in;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-family: "Lucida Console", Courier New, monospace;
+    font-size: large;
+    position: relative;
+}
+
+a:hover {
+    color: rgb(128, 128, 128);
+    background: transparent;
+    text-shadow: 0 0 50px rgb(250, 160, 213);
+}
+
+.grad {
+    background-color: #CA4246;
+    background-image: linear-gradient(
+        45deg,
+        #fab7e9cc 16.666%, 
+        #fcb1df 16.666%,
+        #e9dd77ce 16.666%,
+        #e2cb80 33.333%, 
+        #e4b696 50%, 
+        #b8da99 50%, 
+        #7bf7e2ad 66.666%, 
+        #7d9bdb 66.666%, 
+        #5071b9 83.333%, 
+        #fab0e9 83.333%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 900;
+        font-size: 5em;
+        text-align: left;
+        margin-bottom: -0.6em;
+        display: block;
+        margin-left: 0.7in;
+        margin-right: auto;
+        cursor: pointer;
+        width: 700px;
+}
+
+.grad:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+
+.flex {
+  padding-top: 1in;
+  padding-right: 3in;
+  padding-left: 3in;
+  padding-bottom: 3in;
+}
+
+.w1 {
+  border-color: transparent;
+  border-style: ridge;
+  border-width: 0.15in;
+  border-radius: 20%;
+  margin: 0.1in;
+}
+
+.hi {
+  font-weight: 900;
+  font-size: xx-large;
+  font-variant: small-caps;
+  margin-bottom:0.04in;
+}
+
+.bye {
+    margin-top:-0.01in;
+    color:grey;
+    margin-bottom: 0.1in;
+    font-weight: 700;
+    font-size: x-large;
+    font-variant: small-caps;
+}
+
+p{
+    font-size: large;
+    line-height: 1.5;
+}
+
+/*# sourceMappingURL=styles.css.map */

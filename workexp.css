@@ -5,6 +5,7 @@ body {
   display: grid;
   background-color: #fce9e7;
   z-index: 9999;
+  margin-bottom: 1in;
 }
 
 .links {
@@ -156,5 +157,14 @@ p{
     font-size: large;
     line-height: 1.5;
 }
+
+.foot{
+    font-size: small;
+
+    text-align: center;
+    justify-content: center;
+    padding:50px;
+}
+
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,15 @@
     --bg-color: #fce9e7;
     --typewriterSpeed: 10s;
     --typewriterChars: 45;
+    --bg: #fce9e7;    
+    --color-icon: #535c68;  
+    --social-icon1: #e4405f;
+    --social-icon2: #3b5999;
+    --social-icon3: #e4405f;
+    --social-icon4: #cd201f;
+    --social-icon5: #0077B5;  
 }
+
 .center{
     display: block;
     margin-left: auto;
@@ -54,7 +62,7 @@ hr1 {
     margin-bottom: 1em;
 }
 
-a:hover {
+.a:hover {
     color: rgb(128, 128, 128);
     background: transparent;
     text-shadow: 0 0 50px rgb(250, 160, 213);
@@ -74,13 +82,13 @@ h1 {
     letter-spacing: 0.03em;
     /* Adjust as needed */
     animation: 
-    typing 6s steps(24, end),
+    typing 6s steps(14, end),
     blink-caret 500ms step-end infinite;
   }
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 60% }
+    to { width: 35% }
   }
 
   @keyframes blink-caret {
@@ -124,4 +132,64 @@ h1 {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
+
+.contact{
+    position:relative;
+    line-height: 0.6in;
+    margin-top:0.7in;
+    margin-left:0in;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1.5s ease calc(6s + 0.2s) forwards ;
+}
+
+.text{
+    font-size: medium;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 5px;
+    border-style: groove;
+    border-color: rgb(253, 203, 203);
+    margin-top: 2em;
+    margin-left: 2in;
+    margin-right: 2in;
+    margin-bottom: -8em;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1.5s ease calc(6s + 0.2s) forwards ;
+}
+
+.foot{
+    font-size: small;
+    margin-top: 10em;
+    margin-bottom: -3em;
+
+}
+
+.socials {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: large; 
+    border:none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:inherit;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1.5s ease calc(6s + 0.2s) forwards ;
+  }
+
+.fab{
+    font-size: medium;
 }
